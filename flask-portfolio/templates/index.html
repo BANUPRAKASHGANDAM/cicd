@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banu Prakash | Developer Portfolio</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body { font-family: 'Arial', sans-serif; background-color: #f0f2f5; color: #333; }
+    header { background-color: #0d1b2a; color: #fff; padding: 80px 0; text-align: center; }
+    header h1 { font-size: 3rem; font-weight: bold; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; color: #a9bcd0; margin-bottom: 20px; }
+    header img { width: 80px; }
+    section { padding: 60px 15px; }
+    h2 { font-weight: bold; margin-bottom: 40px; color: #0d1b2a; }
+    .skill-badge { margin: 5px; font-size: 0.9rem; }
+    .card { transition: transform 0.3s; border-radius: 12px; }
+    .card:hover { transform: translateY(-10px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+    .project-card .card-body { background-color: #fff; }
+    ul { padding-left: 20px; }
+</style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1>Banu Prakash</h1>
+    <p>AWS | DevOps | Linux | Blockchain | Python Developer</p>
+    <img src="{{ url_for('static', filename='devops.png') }}" alt="DevOps Symbol">
+</header>
+
+<!-- About Me Section -->
+<section class="container" id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm <strong>Banu Prakash</strong>, a passionate DevOps Engineer and AWS cloud enthusiast with strong Linux skills. I specialize in automating cloud infrastructure, building CI/CD pipelines, and developing decentralized systems using blockchain technology.</p>
+</section>
+
+<!-- Skills Section -->
+<section class="container" id="skills">
+    <h2>Core Skills</h2>
+    <span class="badge bg-primary skill-badge">AWS</span>
+    <span class="badge bg-success skill-badge">DevOps</span>
+    <span class="badge bg-warning text-dark skill-badge">Linux</span>
+    <span class="badge bg-info text-dark skill-badge">Python</span>
+    <span class="badge bg-secondary skill-badge">Blockchain</span>
+    <span class="badge bg-dark skill-badge">CI/CD</span>
+</section>
+
+<!-- Projects Section -->
+<section class="container" id="projects">
+    <h2>Projects</h2>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card project-card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Bone Fracture Detection (Minor Project)</h5>
+                    <p class="card-text">Python, OpenCV, TensorFlow/PyTorch, scikit-learn</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card project-card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Decentralized Voting System (Major Project)</h5>
+                    <p class="card-text">Blockchain (Ethereum/Hyperledger), Smart Contracts, React/Angular</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card project-card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">AWS Infrastructure Automation</h5>
+                    <p class="card-text">Implemented Infrastructure as Code (IaC) using AWS CloudFormation to automate cloud resources.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card project-card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">CI/CD Pipeline Setup</h5>
+                    <p class="card-text">Designed and deployed continuous integration and delivery pipelines using Jenkins and AWS CodePipeline.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Volunteer Section -->
+<section class="container" id="volunteer">
+    <h2>Volunteer Experience</h2>
+    <ul>
+        <li>Volunteer at CARDENO CODEX T-Hub – All India Hackathon for Web3 Developers</li>
+        <li>Block Chain 2024 – Exploring blockchain technology in India</li>
+    </ul>
+</section>
+
+<!-- Contact Section -->
+<section class="container text-center" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:banuprakash@example.com">banuprakash@example.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/banuprakash" target="_blank">linkedin.com/in/banuprakash</a></p>
+    <p>GitHub: <a href="https://github.com/banuprakash" target="_blank">github.com/banuprakash</a></p>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
